@@ -3,5 +3,6 @@ dms
 dmesg
 lsusb
 lscpu
+lscpi
 - Flags - zestawy komend Procesora (Obczaj mikrokody w procesorze !)
 https://askubuntu.com/questions/136165/how-to-create-an-iso-image-from-a-bunch-of-files-on-the-file-system
