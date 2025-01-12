@@ -54,5 +54,23 @@ password_pattern = "(?=^.{8,}$)((?=.*\w)(?=.*[A-Z])\
 (?=.*[a-z])(?=.*[0-9])(?=.*[|!@#'$%&\/\(\)\?\^\'\\\+\-\*]))^.*"
  
 df['password_frag'] = df['password'].apply(lambda x: 'strong' if re.search(password_pattern, str(x)) else 'weak')
+
+#------------------------------------------------------
+df = pd.DataFrame(['0.0.0.0', 
+                   '54.239.128.212',
+                   '256.256.256.256',
+                   '1.a.255.255',
+                   'A to ukryte IP w tekście (89.78.209.42).',
+                   'Można ukryć np. dwa IP: (89.78.209.42) i 1.2.3.4'
+                   ], 
+             columns=['ip'])
+ 
+ip_pattern = "(?:(?:25[0-5]|2[0-4]\d|[01]?\d\d?)\.){3}\
+(?:25[0-5]|2[0-4]\d|[01]?\d\d?)"
+ 
+df['ip_found'] = df['ip'].apply(lambda x: re.findall(ip_pattern, str(x)))
+ 
+df
+
  
 df
