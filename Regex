@@ -2,8 +2,13 @@ Do nauki
 Pomoc w nauce – https://regex101.com/
 https://miroslawmamczur.pl/wyrazenia-regularne-czym-sa-i-jak-pisac-wlasne-regexy/
 
-Regex (skrót od "regular expressions") to narzędzie do wyszukiwania, dopasowywania i manipulowania tekstem w sposób bardziej zaawansowany. Można je wykorzystać, aby znaleźć konkretne wzorce (np. liczby, słowa, daty) w dużych zbiorach tekstu.
+Regex (skrót od "regular expressions") to narzędzie do wyszukiwania, 
+dopasowywania i manipulowania tekstem w sposób bardziej zaawansowany. 
+Można je wykorzystać, aby znaleźć konkretne wzorce (np. liczby, słowa, daty) w dużych zbiorach tekstu.
 
-Przykład: Chcesz znaleźć wszystkie adresy e-mail w dokumencie. Zamiast przeszukiwać ręcznie każdy tekst, używasz wyrażenia regularnego, które automatycznie wyodrębni wszystkie e-maile.
+Przykład: Chcesz znaleźć wszystkie adresy e-mail w dokumencie. 
+Zamiast przeszukiwać ręcznie każdy tekst, używasz wyrażenia regularnego, 
+które automatycznie wyodrębni wszystkie e-maile.
 
-Prosto mówiąc, Regex to sposób na opisanie reguł, które pomagają "zrozumieć" i "wyłapać" tekst w określony sposób.
+Prosto mówiąc, Regex to sposób na opisanie reguł, które pomagają "zrozumieć"
+i "wyłapać" tekst w określony sposób.
