@@ -1,0 +1,28 @@
+W wyrażeniu `[[ "tekst" =~ REGEXP ]]` używa się składni w Bashu, która sprawdza, czy tekst pasuje do wzorca wyrażenia regularnego.
+
+Oto jak to działa:
+
+- `"tekst"`: Jest to ciąg tekstowy, który chcesz sprawdzić.
+- `REGEXP`: Jest to wyrażenie regularne, które określa wzorzec, do którego ma pasować tekst.
+- `[[ ... ]]`: Jest to konstrukcja w Bashu, która służy do wykonywania testów warunkowych (np. sprawdzania, czy coś pasuje).
+
+**Co robi to wyrażenie?**
+
+Sprawdza, czy ciąg tekstowy `"tekst"` pasuje do wzorca wyrażenia regularnego `REGEXP`. Jeśli pasuje, wynik jest prawdziwy (0), w przeciwnym razie fałszywy (1).
+
+### Przykład:
+```bash
+#!/bin/bash
+text="abc123"
+if [[ "$text" =~ [0-9]+ ]]; then
+    echo "Zawiera liczby"
+else
+    echo "Nie zawiera liczb"
+fi
+```
+W tym przykładzie, jeśli `text` zawiera liczby (co w tym przypadku ma miejsce), skrypt wypisze "Zawiera liczby".
+
+### Ważne:
+- Wyrażenie regularne `REGEXP` nie musi być otoczone ukośnikami (`/`), jak w niektórych innych językach.
+- Wzorzec jest dopasowywany do całego ciągu tekstowego, chyba że użyjesz specjalnych znaków (jak `^` czy `$`) w celu określenia początku lub końca ciągu.
+
